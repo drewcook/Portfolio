@@ -1,0 +1,239 @@
+﻿body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+p {
+    padding: 12px;
+    word-wrap: break-word;
+}
+.header {
+    border: 1px solid #ffb400;
+    background: #808080 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) content-box repeat;
+}
+
+.header nav {
+    color: #c8c1c1;
+    text-align:center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.header nav a:link {
+    color: #c8c1c1;  
+}
+
+.header nav a:visited {
+    color: #ffb400
+}
+
+.header nav a:hover {
+    color: #3192cb
+}
+
+.header nav a:active {
+    color: #98acf5
+}
+
+.header h1 {
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+    color: #c8c1c1;
+    text-align: center;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.footer {
+    color: #c8c1c1;
+    border: 1px solid #ffb400;
+    height: 60px;
+    background: #808080 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) content-box repeat;
+    margin-top: 5px;
+    align-content: bottom;
+}
+
+.footer p {
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+    display: inline-block;
+    margin: auto 5px auto 5px;
+    padding: 20px 5px 20px 5px;
+}
+
+.footer nav {
+    float: right;
+    display: inline-block;
+    margin: auto 5px auto 5px;
+    padding: 20px 5px 20px 5px;
+}
+
+.footer nav a:link {
+    color: #c8c1c1;  
+}
+
+.footer nav a:visited {
+    color: #ffb400
+}
+
+.footer nav a:hover {
+    color: #3192cb
+}
+
+.footer nav a:active {
+    color: #98acf5
+}
+
+.div1 img {
+    width: 100%;
+}
+
+.div2 {
+    color: #c8c1c1;
+    background: #808080 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) content-box no-repeat;
+    border: 1px solid #ffb400;
+    width: 33%;
+    display: inline-block;
+    margin: auto;
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+}
+
+.div3 {
+    color: #c8c1c1;
+    background: #808080 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) content-box no-repeat;
+    border: 1px solid #ffb400;
+    width: 33%;
+    display: inline-block;
+    margin: auto;
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+}
+
+.div4 {
+    color: #c8c1c1;
+    background: #808080 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) content-box no-repeat;
+    border: 1px solid #ffb400;
+    width: 33%;
+    display: inline-block;
+    margin: auto;
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+}
+.about-content {
+    background: #808080 url(http://www.designbolts.com/wp-content/uploads/2013/02/Waves-Grey-Seamless-Pattern-For-Website-Background.jpg) content-box repeat;
+    background-size: 100%;
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+}
+
+.about-content p { 
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+.about-content h2 {
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+}
+
+.work-content {
+    background: #808080 url(http://www.designbolts.com/wp-content/uploads/2013/02/Waves-Grey-Seamless-Pattern-For-Website-Background.jpg) content-box repeat;
+}
+
+.work-content h2 {
+    padding-top: 30px;
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+}
+.img {
+    margin: 30px;
+    padding: 5px;
+    border: 5px solid #ffb400;
+    width: 270;
+    height: 200;
+    display: inline-block;
+    text-align: center;
+    background: #232323 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) padding-box no-repeat;
+}
+
+.img img {
+    display: inline;
+    margin: 30px 30px 5px 30px;
+    border: 2px solid #232323;
+}
+
+.img p {
+    color: #c8c1c1;
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+    padding-top: 5px;
+}
+
+.thankyou-content {
+    background: #808080 url(http://www.designbolts.com/wp-content/uploads/2013/02/Waves-Grey-Seamless-Pattern-For-Website-Background.jpg) content-box repeat;
+    background-size: 100%;
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+}
+
+.thankyou-content p {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+.thankyou-content h2 {
+    padding-top: 20px;
+}
+

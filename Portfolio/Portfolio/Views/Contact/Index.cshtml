@@ -1,0 +1,181 @@
+﻿@model Portfolio.Models.Contact
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<head>
+    <title>Contact Page</title>
+    <style>
+.contactform {
+    background: #808080 url(http://www.designbolts.com/wp-content/uploads/2013/02/Waves-Grey-Seamless-Pattern-For-Website-Background.jpg) content-box repeat;
+    background-size: 100%;
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+}
+.contact-header {
+    border: 1px solid #fb400;
+    background: #808080 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) content-box repeat;
+}
+.contact-header img {
+    display: inline-block;
+    margin: 30px;
+    padding-left: 50px;
+}
+.contact-header nav {
+    display: block;
+    text-align: right;
+    color: #c8c1c1;
+    padding-bottom: 10px;
+    margin: 5px;
+}
+
+.contact-header nav a:link {
+    color: #c8c1c1;  
+}
+
+.contact-header nav a:visited {
+    color: #ffb400
+}
+
+.contact-header nav a:hover {
+    color: #3192cb
+}
+
+.contact-header nav a:active {
+    color: #98acf5
+}
+
+.contact-header h1 {
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+    color: #c8c1c1;
+    text-align: center;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.footer {
+    color: #c8c1c1;
+    border: 1px solid #ffb400;
+    height: 60px;
+    background: #808080 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) content-box repeat;
+    margin-top: 5px;
+    align-content: bottom;
+}
+
+.footer p {
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+    display: inline-block;
+    margin: auto 5px auto 5px;
+    padding: 20px 5px 20px 5px;
+}
+
+.footer nav {
+    float: right;
+    display: inline-block;
+    margin: auto 5px auto 5px;
+    padding: 20px 5px 20px 5px;
+}
+
+.footer nav a:link {
+    color: #c8c1c1;  
+}
+
+.footer nav a:visited {
+    color: #ffb400
+}
+
+.footer nav a:hover {
+    color: #3192cb
+}
+
+.footer nav a:active {
+    color: #98acf5
+}
+    </style>
+</head>
+<header>
+    <div class="contact-header">
+    <h1>Drew's Page</h1>
+    <img src="http://amazingpics.net/content/Abstract/Abstract%20Art%20315.jpg" width="200" height="130" float="left" />
+    <nav>
+        &nbsp;||&nbsp;
+        <a href="@Url.Action("Index", "Home")">Home</a>
+        &nbsp;||&nbsp;
+        <a href="@Url.Action("Index", "About")">About</a>
+        &nbsp;||&nbsp;
+        <a href="@Url.Action("Index", "Work")">Work</a>
+        &nbsp;||&nbsp;
+        <a href="@Url.Action("Index", "Careers")">Careers</a>
+        &nbsp;||&nbsp;
+        <a href="@Url.Action("Index", "Contact")">Contact</a>
+        &nbsp;||&nbsp;
+    </nav>
+    </div>
+</header>
+<body>
+<div class="contactform">
+<h2>Contact Form</h2>
+<form action="@Url.Action("Index", "Contact")" method="post">
+    
+    <div>
+        <!--create a label-->
+        @Html.LabelFor(x => x.FirstName)
+        <!--create a text box-->
+        @Html.TextAreaFor(x => x.FirstName)
+        <!--create a message-->
+        @Html.ValidationMessageFor(x => x.FirstName)
+    </div>
+
+    <div>
+        <!--create a label-->
+        @Html.LabelFor(x => x.LastName)
+        <!--create a text box-->
+        @Html.TextAreaFor(x => x.LastName)
+        <!--create a message-->
+        @Html.ValidationMessageFor(x => x.LastName)
+    </div>
+
+    <div>
+        @Html.LabelFor(x => x.EmailAddress)
+        @Html.TextAreaFor(x => x.EmailAddress)
+        @Html.ValidationMessageFor(x => x.EmailAddress)
+    </div>
+
+    <div>
+        @Html.LabelFor(x => x.ContactNumber)
+        @Html.TextAreaFor(x => x.ContactNumber)
+        @Html.ValidationMessageFor(x => x.ContactNumber)
+    </div>
+
+    <div>
+        @Html.LabelFor(x => x.Comment)
+        @Html.TextAreaFor(x => x.Comment)
+        @Html.ValidationMessageFor(x => x.Comment)
+    </div>
+    </div>
+    <input type="submit" value="Submit" />
+</form>
+
+@*add a reference to the jQuery Validation this is the javascript that actually performs our validation using jQuery*@
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}
+</body>
+<footer>
+    <div class="footer">
+    <p>Copyright 2014 Drew Cook</p>
+    <nav>
+        &nbsp;||&nbsp;
+            <a href="@Url.Action("Index", "Home")">Home</a>
+            &nbsp;||&nbsp;
+            <a href="@Url.Action("Index", "About")">About</a>
+            &nbsp;||&nbsp;
+            <a href="@Url.Action("Index", "Work")">Work</a>
+            &nbsp;||&nbsp;
+            <a href="@Url.Action("Index", "Contact")">Contact</a>
+            &nbsp;||&nbsp;
+    </nav>
+    </div>
+</footer>
+</html>

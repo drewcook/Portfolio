@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PortfolioModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="PortfolioEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Contacts" EntityType="PortfolioModel.Contact" />
+    <FunctionImport Name="GetContactByID" ReturnType="Collection(PortfolioModel.GetContactByID_Result)">
+      <Parameter Name="contactID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="InsertContact">
+      <Parameter Name="firstname" Mode="In" Type="String" />
+      <Parameter Name="lastname" Mode="In" Type="String" />
+      <Parameter Name="emailaddress" Mode="In" Type="String" />
+      <Parameter Name="contactnumber" Mode="In" Type="String" />
+      <Parameter Name="comment" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UpdateContact">
+      <Parameter Name="contactID" Mode="In" Type="Int32" />
+      <Parameter Name="firstname" Mode="In" Type="String" />
+      <Parameter Name="lastname" Mode="In" Type="String" />
+      <Parameter Name="emailaddress" Mode="In" Type="String" />
+      <Parameter Name="contactnumber" Mode="In" Type="String" />
+      <Parameter Name="comment" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="Contact">
+    <Key>
+      <PropertyRef Name="ContactID" />
+    </Key>
+    <Property Name="ContactID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="EmailAddress" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ContactNumber" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Comment" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <ComplexType Name="GetContactByID_Result">
+    <Property Type="Int32" Name="ContactID" Nullable="false" />
+    <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="EmailAddress" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ContactNumber" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Comment" Nullable="true" MaxLength="1000" />
+  </ComplexType>
+</Schema>
