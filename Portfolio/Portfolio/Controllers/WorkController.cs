@@ -16,5 +16,24 @@ namespace Portfolio.Controllers
             return View();
         }
 
+        public ActionResult DragonCombat()
+        {
+            return View();
+        }
+
+        public ActionResult TriviaGame()
+        {
+            return View();
+        }
+
+        public ActionResult PokerPlayer()
+        {
+            return View();
+        }
+
+        public ActionResult GuessThatNumber()
+        {
+            return View();
+        }
     }
 }

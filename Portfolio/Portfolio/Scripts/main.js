@@ -20,13 +20,21 @@ $(document).ready(function () {
     //create function to hold everything and set interval
     setInterval(function () {
         NextSlide('dragon');
-        NextSlide('trivia');
-        NextSlide('hangman');
-        NextSlide('battleship');
     }, 3000);
 
+    setInterval(function () {
+        NextSlide('trivia');
+    }, 3000);
 
-    var NextSlide = function(name){
+    setInterval(function () {
+        NextSlide('pokerplayer');
+    }, 3000);
+
+    setInterval(function () {
+        NextSlide('guessthatnumber');
+    }, 3000);
+
+    var NextSlide = function(name) {
         var activeSlide = $('#' + name + ' .active');
         //alert(activeSlide.attr('src'));
         //get the next slide

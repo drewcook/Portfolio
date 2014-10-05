@@ -280,6 +280,7 @@
     <Content Include="Views\Work\Index.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Contact\Thankyou.cshtml" />
+    <Content Include="Views\Work\DragonCombat.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
