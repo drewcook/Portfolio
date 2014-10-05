@@ -21,11 +21,11 @@ namespace Portfolio.Models
         public string FirstName { get; set; }
         [Required]
         public string LastName { get; set; }
-        [Required] [EmailAddress]
+        [Required, EmailAddress]
         public string EmailAddress { get; set; }
-        [Required] [Phone]
+        [Required, Phone]
         public string ContactNumber { get; set; }
-        [Required] [MaxLength(1000)]
+        [Required, MaxLength(1000)]
         public string Comment { get; set; }
 
     }

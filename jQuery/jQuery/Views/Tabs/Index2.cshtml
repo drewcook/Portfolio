@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Index2";
+}
+
+<h2>Tabs Using AJAX</h2>
+
+<div id="content">
+<ul>
+    <li><span class="ajax-get" data-url="@Url.Action("Tab1", "Index2")">Tab 1</span></li>
+    <li><span class="ajax-get" data-url="@Url.Action("Tab2", "Index2")">Tab 2</span></li>
+    <li><span class="ajax-get" data-url="@Url.Action("Tab3", "Index2")">Tab 3</span></li>
+</ul>
+</div>

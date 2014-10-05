@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>AJAX Get using jQuery</h2>
+
+<div id="content">
+    This is some text. When you click this 
+    <span class="ajax-get" data-url="@Url.Action("cats", "AJAXGet")">link</span>,
+    this text will be replaced
+    <br />
+    If you like dogs, I would click
+    <span class="ajax-get" data-url="@Url.Action("dogs", "AJAXGet")">
+        here
+    </span>
+</div>

@@ -92,12 +92,16 @@
 .footer nav a:active {
     color: #98acf5
 }
+
+.form {
+
+}
     </style>
 </head>
 <header>
     <div class="contact-header">
-    <h1>Drew's Page</h1>
-    <img src="http://amazingpics.net/content/Abstract/Abstract%20Art%20315.jpg" width="200" height="130" float="left" />
+    <h1>Drew Cook</h1>
+
     <nav>
         &nbsp;||&nbsp;
         <a href="@Url.Action("Index", "Home")">Home</a>
@@ -106,23 +110,20 @@
         &nbsp;||&nbsp;
         <a href="@Url.Action("Index", "Work")">Work</a>
         &nbsp;||&nbsp;
-        <a href="@Url.Action("Index", "Careers")">Careers</a>
-        &nbsp;||&nbsp;
         <a href="@Url.Action("Index", "Contact")">Contact</a>
         &nbsp;||&nbsp;
     </nav>
     </div>
 </header>
 <body>
-<div class="contactform">
 <h2>Contact Form</h2>
-<form action="@Url.Action("Index", "Contact")" method="post">
+<form id="contactForm" action="@Url.Action("Index", "Contact")" method="post">
     
     <div>
         <!--create a label-->
         @Html.LabelFor(x => x.FirstName)
         <!--create a text box-->
-        @Html.TextAreaFor(x => x.FirstName)
+        @Html.TextBoxFor(x => x.FirstName)
         <!--create a message-->
         @Html.ValidationMessageFor(x => x.FirstName)
     </div>
@@ -131,20 +132,20 @@
         <!--create a label-->
         @Html.LabelFor(x => x.LastName)
         <!--create a text box-->
-        @Html.TextAreaFor(x => x.LastName)
+        @Html.TextBoxFor(x => x.LastName)
         <!--create a message-->
         @Html.ValidationMessageFor(x => x.LastName)
     </div>
 
     <div>
         @Html.LabelFor(x => x.EmailAddress)
-        @Html.TextAreaFor(x => x.EmailAddress)
+        @Html.TextBoxFor(x => x.EmailAddress)
         @Html.ValidationMessageFor(x => x.EmailAddress)
     </div>
 
     <div>
         @Html.LabelFor(x => x.ContactNumber)
-        @Html.TextAreaFor(x => x.ContactNumber)
+        @Html.TextBoxFor(x => x.ContactNumber)
         @Html.ValidationMessageFor(x => x.ContactNumber)
     </div>
 
@@ -153,7 +154,7 @@
         @Html.TextAreaFor(x => x.Comment)
         @Html.ValidationMessageFor(x => x.Comment)
     </div>
-    </div>
+ 
     <input type="submit" value="Submit" />
 </form>
 

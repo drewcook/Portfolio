@@ -60,10 +60,17 @@ textarea {
     display: none;
 }
 
+body {
+    margin: 0;
+    background: #808080 url(http://www.designbolts.com/wp-content/uploads/2013/02/Waves-Grey-Seamless-Pattern-For-Website-Background.jpg) content-box repeat;
+}
+
 p {
-    padding: 12px;
+    text-align: center;
+    margin: 6%;
     word-wrap: break-word;
 }
+
 .header {
     border: 1px solid #ffb400;
     background: #808080 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) content-box repeat;
@@ -139,17 +146,42 @@ p {
     color: #98acf5
 }
 
+.homepage-content a:link {
+    color: #c8c1c1;
+}
+
+.homepage-content a:visited {
+    color: #ffb400;
+}
+
+.homepage-content a:hover {
+    color: #3192cb;
+}
+
+.homepage-content a:active {
+    color: #98acf5;
+}
+
+.div1 {
+   text-align: center;
+   width: 40%;
+   margin: 15px auto 15px auto;
+   border: 2px solid #ffb400;
+}
+
 .div1 img {
     width: 100%;
+    text-align: center;
 }
 
 .div2 {
     color: #c8c1c1;
     background: #808080 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) content-box no-repeat;
     border: 1px solid #ffb400;
-    width: 33%;
+    width: 28%;
+    height: 250px;
     display: inline-block;
-    margin: auto;
+    margin: 2%;
     font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
 }
 
@@ -157,9 +189,10 @@ p {
     color: #c8c1c1;
     background: #808080 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) content-box no-repeat;
     border: 1px solid #ffb400;
-    width: 33%;
+    width: 28%;
+    height: 250px;
     display: inline-block;
-    margin: auto;
+    margin: 2%;
     font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
 }
 
@@ -167,12 +200,20 @@ p {
     color: #c8c1c1;
     background: #808080 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) content-box no-repeat;
     border: 1px solid #ffb400;
-    width: 33%;
+    width: 28%;
+    height: 250px;
     display: inline-block;
-    margin: auto;
+    margin: 2%;
     font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
 }
+
+.about-pic {
+    text-align: left;
+    margin: 30px;
+}
+
 .about-content {
+    text-align: right;
     background: #808080 url(http://www.designbolts.com/wp-content/uploads/2013/02/Waves-Grey-Seamless-Pattern-For-Website-Background.jpg) content-box repeat;
     background-size: 100%;
     font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
@@ -191,6 +232,7 @@ p {
 }
 
 .work-content {
+    text-align: center;
     background: #808080 url(http://www.designbolts.com/wp-content/uploads/2013/02/Waves-Grey-Seamless-Pattern-For-Website-Background.jpg) content-box repeat;
 }
 
@@ -200,8 +242,7 @@ p {
 }
 .img {
     margin: 30px;
-    padding: 5px;
-    border: 5px solid #ffb400;
+    border: 5px ridge #ffb400;
     width: 270;
     height: 200;
     display: inline-block;
@@ -209,10 +250,16 @@ p {
     background: #232323 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) padding-box no-repeat;
 }
 
+.img iframe {
+    display: inline;
+    margin: 30px 30px 5px 30px;
+    border: 3px ridge #c8c1c1;
+}
+
 .img img {
     display: inline;
     margin: 30px 30px 5px 30px;
-    border: 2px solid #232323;
+    border: 3px ridge #c8c1c1;
 }
 
 .img p {
@@ -237,3 +284,10 @@ p {
     padding-top: 20px;
 }
 
+.image.hide {
+    display: none;
+}
+
+.image.active {
+    display: block;
+}
