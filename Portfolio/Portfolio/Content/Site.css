@@ -69,10 +69,15 @@ p {
     text-align: center;
     margin: 2%;
     word-wrap: break-word;
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
 }
 
+h2 {
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+    text-decoration: underline;
+}
 .header {
-    border: 1px solid #ffb400;
+    border: 1px ridge #ffb400;
     background: #808080 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) content-box repeat;
 }
 
@@ -109,7 +114,7 @@ p {
 
 .footer {
     color: #c8c1c1;
-    border: 1px solid #ffb400;
+    border: 1px ridge #ffb400;
     height: 60px;
     background: #808080 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) content-box repeat;
     margin-top: 5px;
@@ -162,11 +167,27 @@ p {
     color: #98acf5;
 }
 
+p a:link {
+    color: #c8c1c1;
+}
+
+p a:visited {
+    color: #ffb400;
+}
+
+p a:hover {
+    color: #3192cb;
+}
+
+p a:active {
+    color: #98acf5;
+}
+
 .div1 {
    text-align: center;
    width: 40%;
    margin: 15px auto 15px auto;
-   border: 2px solid #ffb400;
+   border: 3px ridge #ffb400;
 }
 
 .div1 img {
@@ -177,7 +198,7 @@ p {
 .div2 {
     color: #c8c1c1;
     background: #808080 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) content-box no-repeat;
-    border: 1px solid #ffb400;
+    border: 3px ridge #ffb400;
     width: 28%;
     height: 250px;
     display: inline-block;
@@ -188,7 +209,7 @@ p {
 .div3 {
     color: #c8c1c1;
     background: #808080 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) content-box no-repeat;
-    border: 1px solid #ffb400;
+    border: 3px ridge #ffb400;
     width: 28%;
     height: 250px;
     display: inline-block;
@@ -199,7 +220,7 @@ p {
 .div4 {
     color: #c8c1c1;
     background: #808080 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) content-box no-repeat;
-    border: 1px solid #ffb400;
+    border: 3px ridge #ffb400;
     width: 28%;
     height: 250px;
     display: inline-block;
@@ -294,8 +315,46 @@ p {
 
 .work-image {
     text-align: center;
+    border: 5px ridge #ffb400;
+    width: 450px;
+    margin: auto;
 }
 
 .home-boxes {
     text-align: center;
+    margin: auto;
+}
+
+.download p {
+    text-align: center;
+    color: #c8c1c1;
+    background: #808080 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) content-box no-repeat;
+    border: 2px ridge #ffb400;
+    width: 15%;
+    height: 20px;
+    margin: auto;
+}
+
+.download p a {
+    margin: auto;
+}
+ul {
+    padding: 2%;
+    border: 4px ridge #ffb400;
+    margin: 2%;
+}
+
+li {
+    margin: 1%;
+    font-family:'Century Gothic', futura, 'URW Gothic L', Verdana, sans-serif;
+}
+
+.backlink {
+    margin: 10px 10px 10px 30px;
+    color: #ffb400;
+}
+
+.pic {
+    float: left;
+    display: inline;
 }
