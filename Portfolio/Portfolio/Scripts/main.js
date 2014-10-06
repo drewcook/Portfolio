@@ -62,7 +62,7 @@ $(document).ready(function () {
 
     //carousel for the games on work page
     $('carousel-next').on('click', function () {
-        (this)
+        (this);
     });
    
 

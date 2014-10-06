@@ -67,7 +67,7 @@ body {
 
 p {
     text-align: center;
-    margin: 6%;
+    margin: 2%;
     word-wrap: break-word;
 }
 
@@ -290,4 +290,12 @@ p {
 
 .image.active {
     display: block;
+}
+
+.work-image {
+    text-align: center;
+}
+
+.home-boxes {
+    text-align: center;
 }

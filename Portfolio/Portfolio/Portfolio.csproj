@@ -160,6 +160,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\game links\DragonCombatGame2.0.exe" />
+    <Content Include="Content\game links\GuessThatNumber.exe" />
+    <Content Include="Content\game links\PokerPlayer.exe" />
+    <Content Include="Content\game links\TriviaGame.exe" />
     <Content Include="Content\images\dragoncombatattack.png" />
     <Content Include="Content\images\dragoncombatround.png" />
     <Content Include="Content\images\dragoncombattext.png" />
@@ -281,6 +285,9 @@
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Contact\Thankyou.cshtml" />
     <Content Include="Views\Work\DragonCombat.cshtml" />
+    <Content Include="Views\Work\TriviaGame.cshtml" />
+    <Content Include="Views\Work\PokerPlayer.cshtml" />
+    <Content Include="Views\Work\GuessThatNumber.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
