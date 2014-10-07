@@ -1,21 +1,24 @@
 ﻿@{
     ViewBag.Title = "Guess That Number";
 }
-
+<head>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
 <h2 align="center">Guess That Number</h2>
 <div class="backlink"><p><a href="@Url.Action("Index", "Work")"><<< Back</a></p></div>
 
-<div class="img" id="guessthatnumber">
-    <div class="image active"><img src="@Url.Content("/Content/images/guessthatnumber.png")" alt="Guess That Number Text"  width="450" height="324"/></div>
-    <div class="image hide"><img src="@Url.Content("/Content/images/guessthatnumberhighscore.png")" alt="Guess That Number End"  width="450" height="324"/></div>
-    <div class="image hide"><img src="@Url.Content("/Content/images/guessthatnumberhighscoreresult.png")" alt="Guess That Number High Scores"  width="450" height="324"/></div>
+<div class="work-image" id="guessthatnumber">
+    <div class="image active"><img src="@Url.Content("~/Content/images/guessthatnumber.png")" alt="Guess That Number Text"  width="450" height="324"/></div>
+    <div class="image hide"><img src="@Url.Content("~/Content/images/guessthatnumberhighscore.png")" alt="Guess That Number End"  width="450" height="324"/></div>
+    <div class="image hide"><img src="@Url.Content("~/Content/images/guessthatnumberhighscoreresult.png")" alt="Guess That Number High Scores"  width="450" height="324"/></div>
 </div>
 
-<h2 align="center">Desciption</h2>
+<h2 align="center">Description</h2>
 <ul>
     <li>In this fun game, you will be asked to guess a number between 1 and 100.  You will be able to guess as many times as you like until guessing the number.</li>
-    <li>After each guess, you will be told if you are guessing higher or lower than the actual number.  Once you guess the correct number, you can enter in your name into the high scores.  Try to make it to the top by having the lowest number of guesses!</li>
-    <li>This is a very simply structured game that only uses one function to run the game.  A random number generator pulls a random number between 1 and 100, and a simple if/then statement determines if the guess is high or low. There are also a couple functions for adding in the high score to a database and displaying the high scores.</li>
+    <li>After each guess, you will be told if you are guessing higher or lower than the actual number.  Once you guess the correct number, you will be told how many guesses it took.  Try and beat your score by having the lowest number of guesses!</li>
+    <li>This is a very simply structured game that only uses one function to run the game.  A random number generator pulls a random number between 1 and 100, and a simple if/then statement determines if the guess is high or low.</li>
 </ul>
 <p>Get to guessing and click the link below!</p>
-<div class="download"><p><a href="@Url.Content("/Content/gamelinks/GuessThatNumber.exe")">Download Here</a></p></div>
+<div class="download"><p><a href="@Url.Content("~/Content/gamelinks/GuessThatNumber.exe")">Download Here</a></p></div>

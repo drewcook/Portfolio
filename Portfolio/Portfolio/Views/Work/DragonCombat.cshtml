@@ -1,24 +1,27 @@
 ﻿@{
     ViewBag.Title = "Dragon Combat";
 }
-
+<head>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
 <h2 align="center">Dragon Combat</h2>
 <div class="backlink"><p><a href="@Url.Action("Index", "Work")"><<< Back</a></p></div>
 
-<div class="img" id="dragon">
-<div class="image active"><img src="@Url.Content("/Content/images/dragoncombattext.png")" alt="Dragon Combat Text" width="450" height="324"/></div>
-<div class="image hide"><img src="@Url.Content("/Content/images/dragoncombatround.png")" alt="Dragon Combat Round" width="450" height="324"/></div>
-<div class="image hide"><img src="@Url.Content("/Content/images/dragoncombatattack.png")" alt="Dragon Combat Attack" width="450" height="324"/></div>
-<div class="image hide"><img src="@Url.Content("/Content/images/dragongameend.png")" alt="Dragon Combat End" width="450" height="324"/></div>
+<div class="work-image" id="dragon">
+<div class="image active"><img src="@Url.Content("~/Content/images/dragoncombattext.png")" alt="Dragon Combat Text" width="450" height="324"/></div>
+<div class="image hide"><img src="@Url.Content("~/Content/images/dragoncombatround.png")" alt="Dragon Combat Round" width="450" height="324"/></div>
+<div class="image hide"><img src="@Url.Content("~/Content/images/dragoncombatattack.png")" alt="Dragon Combat Attack" width="450" height="324"/></div>
+<div class="image hide"><img src="@Url.Content("~/Content/images/dragongameend.png")" alt="Dragon Combat End" width="450" height="324"/></div>
 </div>
 
 <h2 align="center">Description</h2>
 <ul>
     <li>This is a fun game that involves a player and a dragon.  It is a round by round combat game in which the user has three different attacks against the dragon.  The dragon has one attack against the user.</li>
     <li>The three user attacks are: sword attack, magic attack, and a self heal.  The sword attack has a 70% hit chance, the magic attack has a 100% hit chance, and the heal only affect the user's health obviously.  The dragon's attack has a 80% hit chance against the user.  The users HP is 100 and the dragon's HP is 200.  If either of their HP gets down to 0, the game ends.</li>
-    <li>This game utilizes C# in many aspects, including multiple classes, an enumerator for the users attack, and random number generators for the hit chance.</li>
+    <li>This game utilizes C# in many aspects, including multiple classes, an enumerator for the users attack, a counter for the number of rounds played, and random number generators for the hit chance.</li>
 </ul>
 <p>Have some fun playing this combat game by clicking the link below!</p>
-<div class="download"><p><a href="@Url.Content("/Content/gamelinks/DragonCombatGame2.0.exe")">Download Here</a></p></div>
+<div class="download"><p><a href="@Url.Content("~/Content/gamelinks/DragonCombatGame2.0.exe")">Download Here</a></p></div>
 
 </html>

@@ -386,6 +386,36 @@ li {
     color: #98acf5;
 }
 
+.resume p a {
+    padding: 6%;
+}
+
+.resume p {
+    width: 240px;
+    font-size: 14px;
+    text-align: center;
+    background: #808080 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) content-box no-repeat;
+    border: 2px ridge #ffb400;
+    margin: 10px 10px 10px 30px;
+}
+
+.resume p a:link {
+    color: #c8c1c1;
+}
+
+.resume p a:visited {
+    color: #ffb400;
+}
+
+.resume p a:hover {
+    color: #3192cb;
+}
+
+.resume p a:active {
+    color: #98acf5;
+}
+
+
 .pic {
     float: left;
     display: inline;

@@ -1,21 +1,24 @@
 ﻿@{
     ViewBag.Title = "Trivia Game";
 }
-
+<head>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
 <h2 align="center">Trivia Game</h2>
 <div class="backlink"><p><a href="@Url.Action("Index", "Work")"><<< Back</a></p></div>
 
-<div class="img" id="trivia">
-    <div class="image active"><img src="@Url.Content("/Content/images/triviagamecorrect.png")" alt="Trivia Game Correct"  width="450" height="324"/></div>
-    <div class="image hide"><img src="@Url.Content("/Content/images/triviagameincorrect.png")" alt="Trivia Game Incorrect"  width="450" height="324"/></div>
-    <div class="image hide"><img src="@Url.Content("Content/images/triviagameresults.png")" alt="Trivia Game Results"  width="450" height="324"/></div>
+<div class="work-image" id="trivia">
+    <div class="image active"><img src="@Url.Content("~/Content/images/triviagamecorrect.png")" alt="Trivia Game Correct"  width="450" height="324"/></div>
+    <div class="image hide"><img src="@Url.Content("~/Content/images/triviagameincorrect.png")" alt="Trivia Game Incorrect"  width="450" height="324"/></div>
+    <div class="image hide"><img src="@Url.Content("~/Content/images/triviagameresults.png")" alt="Trivia Game Results"  width="450" height="324"/></div>
 </div>
 
 <h2 align="center">Description</h2>
 <ul>
     <li>This is a game that involves answering trivia questions.  There is a bank of 5000 questions and answers that the program pulls from.  There are a number of different categories including but not limited to: zodiacs, 80's films, song lyrics, dog breeds, etc.</li>
-    <li>You will have the chance to answer the question (non case-sensitive) one time only.  If your answer is correct, you earn 1000 pts, if incorrect, you gain/lose nothing.  The game will ask 20 questions, which at the end will calculate your total points.  After viewing your total points, you will be able to enter your name into the high scores table.</li>
+    <li>You will have the chance to answer the question (non case-sensitive) one time only.  If your answer is correct, you earn 1000 pts, if incorrect, you gain/lose nothing.  The game will ask 20 questions, which at the end will calculate your total points.</li>
     <li>This game uses an external .txt file to draw from and uses many lambda expressions; one in particular to split each question and answer.  I have implemented a random number generator to pull a random question from the file.  I also have implemented a scoring system and keep record of the users points to display at the end.</li>
 </ul>
 <p>Have some fun testing your trivial knowledge and click the link below!</p>
-<div class="download"><p><a href="@Url.Content("/Content/gamelinks/TriviaGame.exe")">Download Here</a></p></div>
+<div class="download"><p><a href="@Url.Content("~/Content/gamelinks/TriviaGame.exe")">Download Here</a></p></div>
