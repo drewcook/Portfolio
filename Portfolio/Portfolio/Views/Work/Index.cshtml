@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Work Page";
 }
 
 <!DOCTYPE html>
@@ -13,31 +13,31 @@
 <br />
 <h3>Games</h3>
 <div class="img" id="dragon">
-<div class="image active"><img src="../../Content/images/dragoncombattext.png" alt="Dragon Combat Text" width="450" height="324"/></div>
-<div class="image hide"><img src="../../Content/images/dragoncombatround.png" alt="Dragon Combat Round" width="450" height="324"/></div>
-<div class="image hide"><img src="../../Content/images/dragoncombatattack.png" alt="Dragon Combat Attack" width="450" height="324"/></div>
-<div class="image hide"><img src="../../Content/images/dragongameend.png" alt="Dragon Combat End" width="450" height="324"/></div>
+<div class="image active"><img src="@Url.Content("/Content/images/dragoncombattext.png")" alt="Dragon Combat Text" width="450" height="324"/></div>
+<div class="image hide"><img src="@Url.Content("/Content/images/dragoncombatround.png")" alt="Dragon Combat Round" width="450" height="324"/></div>
+<div class="image hide"><img src="@Url.Content("/Content/images/dragoncombatattack.png")" alt="Dragon Combat Attack" width="450" height="324"/></div>
+<div class="image hide"><img src="@Url.Content("/Content/images/dragongameend.png")" alt="Dragon Combat End" width="450" height="324"/></div>
 <p><a href="@Url.Action("DragonCombat","Work")">Dragon Combat 2.0</a></p>
 </div>
 
 <div class="img" id="trivia">
-    <div class="image active"><img src="../../Content/images/triviagamecorrect.png" alt="Trivia Game Correct"  width="450" height="324"/></div>
-    <div class="image hide"><img src="../../Content/images/triviagameincorrect.png" alt="Trivia Game Incorrect"  width="450" height="324"/></div>
-    <div class="image hide"><img src="../../Content/images/triviagameresults.png" alt="Trivia Game Results"  width="450" height="324"/></div>
+    <div class="image active"><img src="@Url.Content("/Content/images/triviagamecorrect.png")" alt="Trivia Game Correct"  width="450" height="324"/></div>
+    <div class="image hide"><img src="@Url.Content("/Content/images/triviagameincorrect.png")" alt="Trivia Game Incorrect"  width="450" height="324"/></div>
+    <div class="image hide"><img src="@Url.Content("Content/images/triviagameresults.png")" alt="Trivia Game Results"  width="450" height="324"/></div>
     <p><a href="@Url.Action("TriviaGame","Work")">Trivia Game</a></p>
 </div>
 
 <div class="img" id="pokerplayer">
-    <div class="image active"><img src="../../Content/images/PokerPlayerText.png" alt="Poker Player Text"  width="450" height="324"/></div>
-    <div class="image hide"><img src="../../Content/images/PokerPlayerHand.png" alt="Poker Player Hand"  width="450" height="324"/></div>
-    <div class="image hide"><img src="../../Content/images/PokerPlayerHands.png" alt="Poker Player Hands"  width="450" height="324"/></div>
+    <div class="image active"><img src="@Url.Content("/Content/images/PokerPlayerText.png")" alt="Poker Player Text"  width="450" height="324"/></div>
+    <div class="image hide"><img src="@Url.Content("/Content/images/PokerPlayerHand.png")" alt="Poker Player Hand"  width="450" height="324"/></div>
+    <div class="image hide"><img src="@Url.Content("/Content/images/PokerPlayerHands.png")" alt="Poker Player Hands"  width="450" height="324"/></div>
 <p><a href="@Url.Action("PokerPlayer", "Work")">Poker Player</a></p>
 </div>
 
 <div class="img" id="guessthatnumber">
-    <div class="image active"><img src="../../Content/images/guessthatnumber.png" alt="Poker Player Text"  width="450" height="324"/></div>
-    <div class="image hide"><img src="../../Content/images/guessthatnumberhighscore.png" alt="Poker Player Hand"  width="450" height="324"/></div>
-    <div class="image hide"><img src="../../Content/images/guessthatnumberhighscoreresult.png" alt="Poker Player Hands"  width="450" height="324"/></div>
+    <div class="image active"><img src="@Url.Content("/Content/images/guessthatnumber.png")" alt="Guess That Number Text"  width="450" height="324"/></div>
+    <div class="image hide"><img src="@Url.Content("/Content/images/guessthatnumberhighscore.png")" alt="Guess That Number End"  width="450" height="324"/></div>
+    <div class="image hide"><img src="@Url.Content("/Content/images/guessthatnumberhighscoreresult.png")" alt="Guess That Number High Scores"  width="450" height="324"/></div>
 <p><a href="@Url.Action("GuessThatNumber","Work")">Guess That Number</a></p>
 </div>
 

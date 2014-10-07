@@ -160,20 +160,28 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\game links\DragonCombatGame2.0.exe" />
-    <Content Include="Content\game links\GuessThatNumber.exe" />
-    <Content Include="Content\game links\PokerPlayer.exe" />
-    <Content Include="Content\game links\TriviaGame.exe" />
+    <Content Include="Content\gamelinks\DragonCombatGame2.0.exe" />
+    <Content Include="Content\gamelinks\GuessThatNumber.exe" />
+    <Content Include="Content\gamelinks\PokerPlayer.exe" />
+    <Content Include="Content\gamelinks\TriviaGame.exe" />
+    <Content Include="Content\images\AboutMePic.png" />
+    <Content Include="Content\images\BearPeak.jpg" />
+    <Content Include="Content\images\ComputerAddictive.png" />
+    <Content Include="Content\images\CoorsField.png" />
     <Content Include="Content\images\dragoncombatattack.png" />
     <Content Include="Content\images\dragoncombatround.png" />
     <Content Include="Content\images\dragoncombattext.png" />
     <Content Include="Content\images\dragongameend.png" />
+    <Content Include="Content\images\GrossReservior.png" />
     <Content Include="Content\images\guessthatnumber.png" />
     <Content Include="Content\images\guessthatnumberhighscore.png" />
     <Content Include="Content\images\guessthatnumberhighscoreresult.png" />
+    <Content Include="Content\images\MaroonBells.png" />
     <Content Include="Content\images\PokerPlayerHand.png" />
     <Content Include="Content\images\PokerPlayerHands.png" />
     <Content Include="Content\images\PokerPlayerText.png" />
+    <Content Include="Content\images\TechWorld.png" />
+    <Content Include="Content\images\TheBrain.png" />
     <Content Include="Content\images\triviagamecorrect.png" />
     <Content Include="Content\images\triviagamehome.png" />
     <Content Include="Content\images\triviagameincorrect.png" />
@@ -288,6 +296,9 @@
     <Content Include="Views\Work\TriviaGame.cshtml" />
     <Content Include="Views\Work\PokerPlayer.cshtml" />
     <Content Include="Views\Work\GuessThatNumber.cshtml" />
+    <Content Include="Scripts\jquery.validate.min.js.map">
+      <DependentUpon>jquery.validate.js</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

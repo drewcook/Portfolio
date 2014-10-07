@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Home Page";
 }
 <!doctype html>
 <head>
@@ -8,29 +8,33 @@
 <body>
 <div class="homepage-content">
 
-<div class="div1">
+<div class="div1" id="home">
 <div class="image active">
-    <img src="http://amazingpics.net/content/Abstract/Abstract%20Art%20114.jpg" alt="Home Page Image 1" />
+    <img src="@Url.Content("/Content/images/TechWorld.png")" alt="Tech World" />
 </div>
 
 <div class="image hide">
-    <img src="http://amazingpics.net/content/Abstract/Abstract%20Art%2041.jpg" alt="Home Page Image 2" />
+    <img src="@Url.Content("/Content/images/CoorsField.png")" alt="Coors Field"/>
 </div>
 
 <div class="image hide">
-    <img src="http://amazingpics.net/content/Abstract/Abstract%20Art%20161.jpg" alt="Home Page Image 3" />
+    <img src="@Url.Content("/Content/images/MaroonBells.png")" alt="Maroon Bells" />
 </div>
 
 <div class="image hide">
-    <img src="http://amazingpics.net/content/Abstract/Abstract%20Art%2030.jpg" alt="another image" />
+    <img src="@Url.Content("/Content/images/GrossReservior.png")" alt="Gross Reservior" />
 </div>
 
-    <div class="image hide">
-    <img src="http://amazingpics.net/content/Abstract/Abstract%20Art%2035.jpg" alt="another image" />
+<div class="image hide">
+    <img src="@Url.Content("/Content/images/BearPeak.jpg")" alt="Bear Peak" />
+</div>
+    
+<div class="image hide">
+    <img src="@Url.Content("/Content/images/TheBrain.png")" alt="The Brain" />
 </div>
 
-    <div class="image hide">
-    <img src="http://amazingpics.net/content/Abstract/Abstract%20Art%2067.jpg" alt="another image" />
+<div class="image hide">
+    <img src="@Url.Content("/Content/images/ComputerAddictive.png")" alt="Computer Addictive" />
 </div>
 
 </div>

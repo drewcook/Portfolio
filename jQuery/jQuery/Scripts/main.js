@@ -36,6 +36,22 @@ $(document).ready(function () {
             nextSlide.removeClass('hide').addClass('active');
         });
     //carousel functions end
+    ////carousel functions start
+    //$('.div1 > .image img').on('click', function () {
+    //    //get the active slide
+    //    var activeSlide = $('.image.active');
+    //    //get the next slide
+    //    var nextSlide = activeSlide.next();
+    //    //make sure its a carousel slide
+    //    if (!nextSlide.hasClass('image')) {
+    //        nextSlide = $('.image').first();
+    //    }
+    //    //remove the active class, add the hide class to the active slide
+    //    activeSlide.removeClass('active').addClass('hide');
+    //    //remove the hide class, add the active class to the active slide
+    //    nextSlide.removeClass('hide').addClass('active');
+    //});
+    ////carousel functions end
 
     ////AJAX GET
     //    $('#content .ajax-get').on('click' function() {
