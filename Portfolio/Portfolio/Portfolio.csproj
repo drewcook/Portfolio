@@ -292,7 +292,6 @@
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\Work\Index.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
-    <Content Include="Views\Contact\Thankyou.cshtml" />
     <Content Include="Views\Work\DragonCombat.cshtml" />
     <Content Include="Views\Work\TriviaGame.cshtml" />
     <Content Include="Views\Work\PokerPlayer.cshtml" />
@@ -300,6 +299,7 @@
     <Content Include="Scripts\jquery.validate.min.js.map">
       <DependentUpon>jquery.validate.js</DependentUpon>
     </Content>
+    <Content Include="Views\Contact\ThankYou.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

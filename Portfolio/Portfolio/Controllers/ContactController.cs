@@ -69,10 +69,10 @@ namespace Portfolio.Controllers
             smtpClient.Send(message);
             //done.
             //kick the user to the ThankYou page
-            return RedirectToAction("Thankyou", "Contact");
+            return RedirectToAction ("ThankYou");
         }
 
-        public ActionResult Thankyou()
+        public ActionResult ThankYou()
         {
             return View();
         }
