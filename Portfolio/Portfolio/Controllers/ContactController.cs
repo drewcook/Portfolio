@@ -74,7 +74,8 @@ namespace Portfolio.Controllers
 
         public ActionResult ThankYou()
         {
-            return View();
+            return PartialView("ThankYou");
         }
+       
     }
 }

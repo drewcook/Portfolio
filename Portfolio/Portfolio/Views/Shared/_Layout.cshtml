@@ -26,14 +26,22 @@
         </div>
     </header>
 <body>    
+    <div id="container">
     @RenderBody()
-
+        </div>
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
 </body>
 <footer>
     <div class="footer">
     <p>Copyright 2014 Drew Cook</p>
+    <table>
+        <tr>
+            <td style="width:50px"><a href="https://github.com/drewcook"><img src="@Url.Content("~/Content/images/github2.png")" /></a></td>
+            <td style="width:50px"><a href="https://www.facebook.com/drew.cook11"><img src="@Url.Content("~/Content/images/facebook.png")" /></a></td>
+            <td></td>
+        </tr>
+    </table>
     <nav>
         &nbsp;||&nbsp;
             <a href="@Url.Action("Index", "Home")">Home</a>

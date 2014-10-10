@@ -172,6 +172,8 @@
     <Content Include="Content\images\dragoncombatround.png" />
     <Content Include="Content\images\dragoncombattext.png" />
     <Content Include="Content\images\dragongameend.png" />
+    <Content Include="Content\images\facebook.png" />
+    <Content Include="Content\images\github2.png" />
     <Content Include="Content\images\GrossReservior.png" />
     <Content Include="Content\images\guessthatnumber.png" />
     <Content Include="Content\images\guessthatnumberhighscore.png" />
