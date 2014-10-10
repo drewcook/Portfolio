@@ -89,7 +89,7 @@ h2 {
     text-decoration: underline;
 }
 .header {
-    border: 1px ridge #ffb400;
+    border: 3px ridge #ffb400;
     background: #808080 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) content-box repeat;
 }
 
@@ -126,7 +126,7 @@ h2 {
 
 .footer {
     color: #c8c1c1;
-    border: 1px ridge #ffb400;
+    border: 3px ridge #ffb400;
     height: 60px;
     background: #808080 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) content-box repeat;
     margin-top: 5px;
@@ -134,6 +134,7 @@ h2 {
 }
 
 .footer p {
+    float: left;
     font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
     display: inline-block;
     margin: auto 5px auto 5px;
@@ -396,7 +397,7 @@ li {
     text-align: center;
     background: #808080 url(http://amazingpics.net/content/Abstract/Abstract%20Art%20100.jpg) content-box no-repeat;
     border: 2px ridge #ffb400;
-    margin: 10px 10px 10px 30px;
+    margin: 10px 10px 20px 30px;
 }
 
 .resume p a:link {
@@ -419,5 +420,11 @@ li {
 .pic {
     float: left;
     display: inline;
+    border: 3px ridge #808080
 }
 
+table {
+    display: inline-block;
+    text-align: center;
+    padding: 8px 0 0 40px;
+}
