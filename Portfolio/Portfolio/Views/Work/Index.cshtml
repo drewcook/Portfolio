@@ -9,11 +9,25 @@
 <link rel="icon" href="~/Content/images/favicon.ico" type="image/x-icon">
     <title>Work Page</title>
 </head>
+    <header>
+        <div id="navbar">
+        <div id="holder">
+        <ul>
+            <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+            <li><a href="@Url.Action("Index", "About")">About Me</a></li>
+            <li><a href="@Url.Action("Index", "Work")" id="onlink">My Work</a></li>
+            <li><a href="@Url.Action("Index", "Contact")">Contact</a></li>
+        </ul>
+            <h1>Drew Cook</h1>   
+        </div>
+        </div>
+    </header>
 <body>
 <div class="work-content">
 <h2 align="center">Samples Of Work</h2>
 <br />
 <h3>Games</h3>
+<p>Here are just a few examples of my work.  I created all these games entirely in C# within Visual Studio 2012.  Some are complexly designed, such as Poker Player and Dragon Combat, and others are simple such as Guess That Number.  You can find the code for all of my work by clicking on the GitHub icon at the bottom of this page.  Click the game title to view details!</p>
 <div class="img" id="dragon">
 <div class="image active"><img src="@Url.Content("~/Content/images/dragoncombattext.png")" alt="Dragon Combat Text" width="450" height="324"/></div>
 <div class="image hide"><img src="@Url.Content("~/Content/images/dragoncombatround.png")" alt="Dragon Combat Round" width="450" height="324"/></div>
@@ -44,7 +58,8 @@
 </div>
 
 
-<h3>Music</h3>
+<h3>Side Projects</h3>
+<p>Here are a couple samples of some music I have created.  I have recorded all instruments and arranged and mixed each track.  You can find more of my music by clicking the SoundCloud icon at the bottom of this page.  Enjoy listening!</p>
 <div class="img">
     <iframe width="250" height="180" scrolling="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/156962621&amp;color=ffb400&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
     <p>"Jerusalem Ridge"</p>

@@ -9,22 +9,6 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-    <header>
-        <div class="header">
-        <h1>Drew Cook</h1>
-        <nav>
-            &nbsp;||&nbsp;
-            <a href="@Url.Action("Index", "Home")">Home</a>
-            &nbsp;||&nbsp;
-            <a href="@Url.Action("Index", "About")">About</a>
-            &nbsp;||&nbsp;
-            <a href="@Url.Action("Index", "Work")">Work</a>
-            &nbsp;||&nbsp;
-            <a href="@Url.Action("Index", "Contact")">Contact</a>
-            &nbsp;||&nbsp;
-        </nav>
-        </div>
-    </header>
 <body>    
     <div id="container">
     @RenderBody()

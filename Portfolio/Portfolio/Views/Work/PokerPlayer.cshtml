@@ -5,6 +5,19 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
+ <header>
+        <div id="navbar">
+        <div id="holder">
+        <ul>
+            <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+            <li><a href="@Url.Action("Index", "About")">About Me</a></li>
+            <li><a href="@Url.Action("Index", "Work")" id="onlink">My Work</a></li>
+            <li><a href="@Url.Action("Index", "Contact")">Contact</a></li>
+        </ul>
+            <h1>Drew Cook</h1>   
+        </div>
+        </div>
+    </header>
 <h2 align="center">Poker Player</h2>
 <div class="backlink"><p><a href="@Url.Action("Index", "Work")"><<< Back</a></p></div>
 
@@ -15,7 +28,7 @@
 </div>
 
 <h2 align="center">Description</h2>
-<ul>
+<ul class="desclist">
     <li>This is a game where you can play some poker!  The user will get dealt five cards each with its own suit and rank, and the program will determine from those cards what kind of hand you have.  This game follows the basic rules of poker in which a high card hand is the worst hand to be dealt and a royal flush is the best hand to be dealt.</li>
     <li>The game will deal twenty hands.  After each hand is dealt, the deck of cards will be shuffle again, so there will be a fresh deck to draw from each time.  It is a very simple game with some complex coding.</li>
     <li>The code itself is somewhat intensive for such a simple game, and uses multiple classes, an enumeration of hands, a deck of cards, and functions such as dealing the cards and shuffling the deck.  There are many lambda expressions being used to determine what kind of hand it is (i.e. straight, flush, four of a kind).</li>

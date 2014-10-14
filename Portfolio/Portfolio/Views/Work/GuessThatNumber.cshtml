@@ -5,6 +5,19 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
+ <header>
+        <div id="navbar">
+        <div id="holder">
+        <ul>
+            <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+            <li><a href="@Url.Action("Index", "About")">About Me</a></li>
+            <li><a href="@Url.Action("Index", "Work")" id="onlink">My Work</a></li>
+            <li><a href="@Url.Action("Index", "Contact")">Contact</a></li>
+        </ul>
+            <h1>Drew Cook</h1>   
+        </div>
+        </div>
+    </header>
 <h2 align="center">Guess That Number</h2>
 <div class="backlink"><p><a href="@Url.Action("Index", "Work")"><<< Back</a></p></div>
 
@@ -15,7 +28,7 @@
 </div>
 
 <h2 align="center">Description</h2>
-<ul>
+<ul class="desclist">
     <li>In this fun game, you will be asked to guess a number between 1 and 100.  You will be able to guess as many times as you like until guessing the number.</li>
     <li>After each guess, you will be told if you are guessing higher or lower than the actual number.  Once you guess the correct number, you will be told how many guesses it took.  Try and beat your score by having the lowest number of guesses!</li>
     <li>This is a very simply structured game that only uses one function to run the game.  A random number generator pulls a random number between 1 and 100, and a simple if/then statement determines if the guess is high or low.</li>

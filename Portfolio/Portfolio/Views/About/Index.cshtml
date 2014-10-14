@@ -7,6 +7,20 @@
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title>About Me</title>
 </head>
+<header>
+        <div id="navbar">
+        <div id="holder">
+        <ul>
+            <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+            <li><a href="@Url.Action("Index", "About")" id="onlink">About Me</a></li>
+            <li><a href="@Url.Action("Index", "Work")">My Work</a></li>
+            <li><a href="@Url.Action("Index", "Contact")">Contact</a></li>
+          </ul>
+        <h1>Drew Cook</h1>
+        </div>   
+        </div>
+    
+    </header>
 <body>
 
 <div class="about-content">
@@ -15,6 +29,8 @@
     <img src="@Url.Content("~/Content/images/AboutMePic.png")" alt="About Me Photo" />
 </p>
 <p>I am originally from Baton Rouge, Louisiana and have enjoyed growing up in a city that has great food and heritage.  I went to Louisiana State University and studied both Landscape Architecture and Communications.  I moved to Denver, Colorado in April of 2014 and have been loving the city and the mountains ever since.</p>
+<p>I have always had a strong interest in technology.  Ever since I was a young boy I had always had a computer in my house and started playing games at a young age.  As I grew older, I became interested in the inner workings of a computer, such as how file directories worked and the structure of the operating system.  I used to download external material for computer games such as The Sims and Starcraft and implement it into the game.</p>
+<p>Upon moving to Colorado, I discovered Seedpaths and knew instantly it would be my gateway into learning more about computer technologies.  In this intensive 8-week software development bootcamp, I have learned how to code in the languages of .NET development including C#, .NET MVC 4 platform, jQuery, JavaScript, HTML5, CSS3, and utilizing SQL database querying. I have also become a certified ScrumMaster and have learned the methods of Agile Scrum.</p>
 <p>I am an avid musician of over twelve years and play a variety of instruments.  I initially started playing drums at a young age and went on to study jazz drumming in high school.  I have played the guitar for ten years and have studied many styles of playing including rock, blues, jazz, and fingerstyle. Recently, I've picked up learning the mandolin and have been studying the forms of bluegrass music.</p>
 <p>When I have free time I like to get out to the mountains and go hiking and camping.  I also like to ride my road bike and try to work out as much as possible and stay healthy.  I love to cook great meals and focus on eating healthy.  Every so often I will dive into a good novel as well.</p>
 <div class="resume"><p><a href="@Url.Content("~/Content/DrewCookResume.pdf")">Click Here To View My Resume</a></p></div>

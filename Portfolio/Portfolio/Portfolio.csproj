@@ -267,6 +267,9 @@
       <LastGenOutput>Contacts.cs</LastGenOutput>
     </Content>
     <Content Include="Content\DrewCookResume.pdf" />
+    <Content Include="Content\fonts\CHOPS___.TTF" />
+    <Content Include="Content\fonts\Dobkin.ttf" />
+    <Content Include="Content\fonts\KILLIGRA.TTF" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />

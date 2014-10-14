@@ -5,6 +5,19 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
+ <header>
+        <div id="navbar">
+        <div id="holder">
+        <ul>
+            <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+            <li><a href="@Url.Action("Index", "About")">About Me</a></li>
+            <li><a href="@Url.Action("Index", "Work")" id="onlink">My Work</a></li>
+            <li><a href="@Url.Action("Index", "Contact")">Contact</a></li>
+        </ul>
+            <h1>Drew Cook</h1>   
+        </div>
+        </div>
+    </header>
 <h2 align="center">Trivia Game</h2>
 <div class="backlink"><p><a href="@Url.Action("Index", "Work")"><<< Back</a></p></div>
 
@@ -15,7 +28,7 @@
 </div>
 
 <h2 align="center">Description</h2>
-<ul>
+<ul class="desclist">
     <li>This is a game that involves answering trivia questions.  There is a bank of 5000 questions and answers that the program pulls from.  There are a number of different categories including but not limited to: zodiacs, 80's films, song lyrics, dog breeds, etc.</li>
     <li>You will have the chance to answer the question (non case-sensitive) one time only.  If your answer is correct, you earn 1000 pts, if incorrect, you gain/lose nothing.  The game will ask 20 questions, which at the end will calculate your total points.</li>
     <li>This game uses an external .txt file to draw from and uses many lambda expressions; one in particular to split each question and answer.  I have implemented a random number generator to pull a random question from the file.  I also have implemented a scoring system and keep record of the users points to display at the end.</li>

@@ -5,6 +5,19 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
+ <header>
+        <div id="navbar">
+        <div id="holder">
+        <ul>
+            <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+            <li><a href="@Url.Action("Index", "About")">About Me</a></li>
+            <li><a href="@Url.Action("Index", "Work")" id="onlink">My Work</a></li>
+            <li><a href="@Url.Action("Index", "Contact")">Contact</a></li>
+        </ul>
+            <h1>Drew Cook</h1>   
+        </div>
+        </div>
+    </header>
 <h2 align="center">Dragon Combat</h2>
 <div class="backlink"><p><a href="@Url.Action("Index", "Work")"><<< Back</a></p></div>
 
@@ -16,7 +29,7 @@
 </div>
 
 <h2 align="center">Description</h2>
-<ul>
+<ul class="desclist">
     <li>This is a fun game that involves a player and a dragon.  It is a round by round combat game in which the user has three different attacks against the dragon.  The dragon has one attack against the user.</li>
     <li>The three user attacks are: sword attack, magic attack, and a self heal.  The sword attack has a 70% hit chance, the magic attack has a 100% hit chance, and the heal only affect the user's health obviously.  The dragon's attack has a 80% hit chance against the user.  The users HP is 100 and the dragon's HP is 200.  If either of their HP gets down to 0, the game ends.</li>
     <li>This game utilizes C# in many aspects, including multiple classes, an enumerator for the users attack, a counter for the number of rounds played, and random number generators for the hit chance.</li>
