@@ -1,4 +1,6 @@
-﻿@font-face {
+﻿Pick from file...
+
+@font-face {
 	font-family: Dobkin;
 	src: url('fonts/Dobkin.ttf') format('truetype');
 }
@@ -137,6 +139,7 @@ h2 {
     text-shadow: 1px 1px 1px #fff;
     border-radius: 15px 15px 0 0;
     box-shadow: 1px -1px 2px #000000;
+    transition: all ease-in .25s;
 }
 
 #navbar #holder ul li a:hover {
@@ -312,9 +315,10 @@ p a:active {
 }
 
 .about-content p { 
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 400;
     text-align: left;
+    font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
 }
 
 .about-content h2 {
@@ -361,7 +365,6 @@ p a:active {
 }
 
 .thankyou-content {
-    background: #808080 url(http://www.designbolts.com/wp-content/uploads/2013/02/Waves-Grey-Seamless-Pattern-For-Website-Background.jpg) content-box repeat;
     background-size: 100%;
     font-family: 'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
 }
